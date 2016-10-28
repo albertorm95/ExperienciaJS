@@ -7,8 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('spaces');
   this.route('about');
+  this.route('spaces', function(){
+  	this.route('space-details', { path: '/:space_id' });
+  });
 });
 
 export default Router;

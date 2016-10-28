@@ -1,0 +1,22 @@
+<article class="listing">
+  <h3>{{space.title}}</h3>
+  <div class="detail owner">
+    <span>Dueño:</span> {{space.owner}}
+  </div>
+  <div class="detail type">
+    <span>Tipo:</span> {{space.type}}
+  </div>
+  <div class="detail location">
+    <span>Lugar:</span> {{space.city}}
+  </div>
+  <div class="detail bedrooms">
+    <span>Area:</span> {{space.area}}
+  </div>
+  <div class="detail bedrooms">
+    <span>Precio:</span> {{space.price}}
+  </div>
+  {{#link-to 'spaces.space-details' space class="button"}}
+    Detalles
+  {{/link-to}}
+</article>
+{{yield}}
